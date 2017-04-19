@@ -1,0 +1,48 @@
+*{
+	box-sizing: border-box;
+}
+.prime {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin: 1px;
+	border: 1px solid grey;
+	line-height: 48px;
+	text-align: center;
+}
+.prime.selected,
+.prime:hover,
+.prime:focus {
+	border-color: green;
+	color: green;
+}
+
+#visual {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 600px;
+	height: 400px;
+	background: orange;
+}
+.well {
+	flex-grow: 1;
+	border: 1px solid brown;
+	border-top: none;
+	background: white;
+	margin: 0 0 0 -1px;
+	padding: 0;
+	text-align: center;
+	position: relative;
+}
+.well .num {
+	padding: 0.5em;
+}
+.well .depth {
+	position: absolute;
+	font-size: 0.6rem;
+	top: 48%;
+	right: 1px;
+}
+
